@@ -1,0 +1,1 @@
+console.log("Hello, World!"); // Not really my first js code lol.
