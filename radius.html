@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>circumference calculator</title>
+</head>
+<body>
+    <h1>Circumference calculator</h1>
+    <label id="radius">Radius:</label>
+    <input type="number" id="radiusInput" placeholder="Enter radius">
+    <button id="calculateButton">Calculate Circumference</button>
+    <h1 id = "result"></h1>
+    <script>
+        document.getElementById('calculateButton').addEventListener('click', function() {
+            const radius = parseFloat(document.getElementById('radiusInput').value);
+            if (isNaN(radius) || radius < 0) {
+                document.getElementById('result').innerText = "Please enter a valid non-negative number for radius.";
+                return;
+            }
+            const circumference = 2 * Math.PI * radius;
+            document.getElementById('result').innerText = `Circumference: ${circumference.toFixed(2)}`;
+        });
+    </script>
+</body>
+</html>
