@@ -61,6 +61,6 @@ document.getElementById("submit").onclick = function() {
 // Type conversion
 
 let num = window.prompt("Enter a number:");
-num = Number(num+1); // Convert string to number
+num = Number(num); // Convert string to number
 console.log(`The number you entered is: ${num}`);
 console.log(`The type of the variable is: ${typeof num}`);
