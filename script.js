@@ -43,3 +43,24 @@ console.log(x);
 
 x %= 3; // x = x % 3
 console.log(x);
+
+// Prompting user for input in a easy manner
+
+let firstName = window.prompt("Enter your first name:");
+document.getElementById("name").textContent = `Hello, ${firstName}! Welcome to JavaScript programming.`;
+
+console.log(`Hello, ${firstName}! Welcome to JavaScript programming.`);
+
+// Prompting user for input in a pro manner
+let username;
+document.getElementById("submit").onclick = function() {
+    username = document.getElementById("username").value;
+    document.getElementById("greeting").textContent = `Hello, ${username}`
+}
+
+// Type conversion
+
+let num = window.prompt("Enter a number:");
+num = Number(num+1); // Convert string to number
+console.log(`The number you entered is: ${num}`);
+console.log(`The type of the variable is: ${typeof num}`);
